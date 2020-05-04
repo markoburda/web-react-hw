@@ -29,7 +29,7 @@ main{
 }
 
 main aside{
-  flex: 1;
+  /*flex: 1;*/
   height: 100%;
   margin: 0 auto;
   width: 300px;
@@ -56,14 +56,17 @@ main section .grid-desc{
   width: 800px;
   margin: 0 auto;
 }
+#root{
+  width: 100%;
+}
 
-.app{
-  background: lightslategrey;
+.App{
+  width: 100%;
 }
 
 .App-header{
   display: flex;
-  width: 100%;
+  /*width: 100%;*/
   justify-content: center;
   justify-items: center;
   height: 100px;
