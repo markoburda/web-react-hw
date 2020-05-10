@@ -1,0 +1,15 @@
+.sidebar-container{
+    /*padding: 30px 0;*/
+    text-align: center;
+    width: 100%;
+}
+
+.sidebar-title{
+    padding: 20px;
+    background: #4C4441;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+

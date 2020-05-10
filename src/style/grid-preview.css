@@ -1,0 +1,12 @@
+.grid-container{
+    display: grid;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 5px;
+    grid-template-areas: "block-a main-block main-block block-b"
+    "block-c block-d block-e block-f";
+    /*background: chocolate;*/
+}

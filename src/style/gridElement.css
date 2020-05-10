@@ -1,0 +1,48 @@
+.preview-container-a{
+    grid-area: block-a;
+}
+
+.preview-highlight{
+    grid-area: main-block;
+}
+
+.preview-container-b{
+    grid-area: block-b;
+}
+
+.preview-container-c{
+    grid-area: block-c;
+}
+
+.preview-container-d{
+    grid-area: block-d;
+}
+
+.preview-container-e{
+    grid-area: block-e;
+}
+
+.preview-container-f{
+    grid-area: block-f;
+}
+
+.preview-container-g{
+    grid-area: block-g;
+}
+
+.preview-container{
+    overflow: hidden;
+}
+
+.preview-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+    /*transition: transform 0.4s;*/
+}
+
+.preview-container:hover img{
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+}
