@@ -1,0 +1,52 @@
+.specs-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.specs-header{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.specs-header img{
+    height: 100%;
+}
+
+.specs-header h1{
+    color: #ff0075;
+}
+
+.specs-header .header-right ul li{
+    color: white;
+    font-weight: bold;
+}
+
+.specs-section h1{
+    text-transform: uppercase;
+    color: #ff0075;
+}
+
+.specs-section .specs-row{
+    display: flex;
+    margin: 50px 0;
+}
+
+.specs-section .specs-column{
+    border-right: 1px solid #ff0075;
+    display: flex;
+    align-items: center;
+}
+
+.specs-section .specs-column h2{
+    text-transform: uppercase;
+    color: white;
+    margin: 0 20px;
+}
+
+.specs-section .specs-column p{
+    color: #a8a8a8;
+    font-weight: bold;
+    margin-right: 15px;
+}

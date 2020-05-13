@@ -2,11 +2,14 @@
     /*padding: 30px 0;*/
     text-align: center;
     width: 100%;
+    /*border-right: 2px solid #45a29e;*/
 }
 
 .sidebar-title{
     padding: 20px;
-    background: #4C4441;
+    /*background: #ff0075;*/
+    border-bottom: 2px solid #ff0075;
+    font-weight: bold;
     color: white;
     text-transform: uppercase;
 }
