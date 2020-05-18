@@ -63,8 +63,9 @@ main section{
 }
 
 main section .grid-title{
-  background: #ff0075;
-  align-content: center;
+  /*background: #ff0075;*/
+  /*align-content: center;*/
+  margin: 10px 0;
 }
 
 main section .grid-title p{
@@ -73,7 +74,7 @@ main section .grid-title p{
   text-transform: uppercase;
   font-size: 3em;
   /*color: white;*/
-  color: white;
+  color: #ff0075;
   font-weight: bold;
   /*text-shadow: 0 0 20px #ff0075;*/
   margin-left: 10px;

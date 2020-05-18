@@ -11,7 +11,8 @@
 }
 
 .specs-header img{
-    height: 100%;
+    height: 80%;
+    margin-right: 100px;
 }
 
 .specs-header h1{

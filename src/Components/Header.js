@@ -16,9 +16,9 @@ export default class Header extends React.Component {
                     <Link to="/videos">
                         <li><p>videos</p></li>
                     </Link>
-                    <Link to="reviews">
-                        <li><p>reviews</p></li>
-                    </Link>
+                    {/*<Link to="reviews">*/}
+                    {/*    <li><p>reviews</p></li>*/}
+                    {/*</Link>*/}
                     <Link to="/about">
                         <li className={'about'}><p>about</p></li>
                     </Link>
