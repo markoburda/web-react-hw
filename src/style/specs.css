@@ -51,3 +51,7 @@
     font-weight: bold;
     margin-right: 15px;
 }
+
+.not-found{
+    color: #ff0075;
+}

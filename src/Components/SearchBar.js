@@ -1,8 +1,8 @@
 import React from "react";
 import "../style/search-bar.css"
-import { useHistory } from "react-router-dom";
+import { Redirect, useHistory, withRouter} from "react-router-dom";
 
-export default class SearchBar extends React.Component{
+class SearchBar extends React.Component{
     constructor(props) {
         super(props);
         this.handleChange = this.handleChange.bind(this);
@@ -14,17 +14,18 @@ export default class SearchBar extends React.Component{
     }
 
     handleSubmit(event) {
-        const history = useHistory();
-        history.push(`/specs/${this.textInput.value}`);
+        this.props.history.push(`/specs/${this.textInput.value}`);
         event.preventDefault();
     }
 
     render() {
         return (
-            <form className={"search-container"}>
-                <input type="text" placeholder={"Search:"} className={"search-bar"} ref={(input) => this.textInput = input}/>
-                <input type="submit" onClick={this.handleSubmit.bind(this)} className={"submit-btn"} value={"Go"}/>
+            <form  onSubmit={this.handleSubmit} className={"search-container"}>
+                <input type="text" placeholder={"Search:"} className={"search-bar"} ref={(input) => this.textInput = input} onChange={this.handleChange.bind(this)}/>
+                <input type="submit" className={"submit-btn"} value={"Go"}/>
             </form>
         );
     }
 }
+
+export default withRouter(SearchBar)

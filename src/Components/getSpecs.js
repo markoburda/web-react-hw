@@ -8,33 +8,31 @@ export default class GetSpecs extends React.Component {
             items: null,
             isLoaded: false,
             deviceName: props.deviceName,
+            timeout: false
         }
     }
 
     componentDidMount() {
-        console.log("Name: " + this.state.deviceName);
         const API_TOKEN = "87fcfd79654e5cf5c71a569148d4b6da96b3f4f8858e3337";
 
         var url = "https://fonoapi.freshpixl.com/v1/getdevice?device=" + this.state.deviceName + "&token=" + API_TOKEN;
         fetch(url)
             .then(data => data.json())
             .then(data => {
-                console.log("data:" + Object.entries(data[0]));
                 this.setState({
                     items: data[0],
                     isLoaded: true
-                })
+                });
             });
     }
 
     render() {
         var {isLoaded, items} = this.state;
 
-        if(!isLoaded){
-            return null;
-        }
+        if(!isLoaded || items === undefined){
+                return <h1 className={"not-found"}>Seems like there are no results for this search. We're deeply sorry.</h1>
+            }
         else {
-            console.log("Items:" + items);
             return (
                 <div className={'specs-container'}>
                     <div className="specs-header">
@@ -102,25 +100,6 @@ export default class GetSpecs extends React.Component {
                                 <p>{items.gpu}</p>
                             </div>
                         </div>
-                        {/*<h1>main camera</h1>*/}
-                        {/*<div className="specs-row">*/}
-                        {/*    <div className="specs-column">*/}
-                        {/*        <h2>Quad</h2>*/}
-                        {/*        <p> 48 MP, f/1.8, 25mm (wide), 1/1.43", 1.12µm, omnidirectional PDAF, Laser AF,*/}
-                        {/*            OIS <br/>*/}
-                        {/*            8 MP, f/2.4, (telephoto), 1/1.0µm, PDAF, OIS, 3x optical zoom <br/>*/}
-                        {/*            48 MP, f/2.2, 14mm, 116° (ultrawide), 1/2.0", 0.8µm, PDAF <br/>*/}
-                        {/*            5 MP, f/2.4, (depth)</p>*/}
-                        {/*    </div>*/}
-                        {/*    <div className="specs-column">*/}
-                        {/*        <h2>Features</h2>*/}
-                        {/*        <p>Dual-LED flash, HDR, panorama</p>*/}
-                        {/*    </div>*/}
-                        {/*    <div className="specs-column">*/}
-                        {/*        <h2>Video</h2>*/}
-                        {/*        <p>4K@30/60fps, 1080p@30/60/240fps, Auto HDR, gyro-EIS</p>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
                         <h1>features</h1>
                         <div className="specs-row">
                             <div className="specs-column">
