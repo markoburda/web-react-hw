@@ -14,9 +14,9 @@ export default class Header extends React.Component {
                     <SideBar className="sidebar"/>
                 </aside>
                 <section>
-                    <div  className={"grid-title"}><p>latest smartphones</p></div>
+                    <div  className={"grid-title"}><p>quick access</p></div>
                     <PreviewGrid/>
-                    <p className={"grid-desc"}>Click on the <b>first</b> smartphone <br/> to get a taste <br/>of what the specs page looks like.</p>
+                    <p className={"grid-desc"}>Click on <b>any of the smartphones on the grid </b><br/> or <b>choose a device from list</b> to get a taste <br/> of what the specs page looks like.</p>
                 </section>
             </div>
         )

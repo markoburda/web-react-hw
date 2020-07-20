@@ -1,8 +1,8 @@
 import React from 'react';
 
 import "../style/header.css"
-import About from "./About";
-import {BrowserRouter as Router, Switch, Route, NavLink, Link} from 'react-router-dom';
+import SearchBar from "./SearchBar";
+import {Link} from 'react-router-dom';
 
 export default class Header extends React.Component {
     render() {
@@ -16,12 +16,10 @@ export default class Header extends React.Component {
                     <Link to="/videos">
                         <li><p>videos</p></li>
                     </Link>
-                    <Link to="reviews">
-                        <li><p>reviews</p></li>
-                    </Link>
                     <Link to="/about">
                         <li className={'about'}><p>about</p></li>
                     </Link>
+                    <SearchBar/>
                 </ul>
             </div>
         )

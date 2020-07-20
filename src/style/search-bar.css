@@ -1,0 +1,23 @@
+.search-container{
+    margin-left: 50px;
+    height: 30px;
+}
+
+.search-bar{
+    background: #031d41;
+    border: none;
+    height: 100%;
+    padding: 0 10px;
+    color: #a8a8a8;
+}
+
+.submit-btn{
+    height: 100%;
+    background: #ff0075;
+    /*border-style: none;*/
+    border: 2px solid#ff0075;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    padding: 0 10px;
+}

@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Switch, Route, NavLink, Link} from 'react-route
 import About from "./Components/About";
 import Reviews from "./Components/Reviews";
 import Videos from "./Components/Videos";
+import GetSpecs from "./Components/getSpecs";
 import Specs from "./Components/Specs";
 import PhoneChart from "./Components/PhoneChart";
 
@@ -22,8 +23,8 @@ function App() {
                 <main>
                         <Switch>
                             <Route path="/" exact component={Home}/>
-                            <Route path="/specs" component={Specs}/>
-                            <Route path="/reviews" component={Reviews}/>
+                            <Route path="/specs/:devicename" component={Specs}/>
+                            <Route path="/search" component={Specs}/>
                             <Route path="/videos" component={Videos}/>
                             <Route path="/about" exact component={About}/>
                         </Switch>

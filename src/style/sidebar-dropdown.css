@@ -1,0 +1,12 @@
+h1{
+    color: white;
+}
+
+.brandName, .err{
+    color: red;
+}
+
+.device-list .list-link{
+    color: #ff0075;
+    font-size: .8em;
+}
